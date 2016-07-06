@@ -34,9 +34,9 @@ class OktaConfiguration {
     ...
     
     init(){
-        kIssuer = "https://example.com"
-        kClientID = "CLIENT_ID"
-        kRedirectURI = "com.example:/openid"
+        kIssuer = "https://example.com"       // Base url of Okta Developer domain
+        kClientID = "CLIENT_ID"               // Client ID of Application
+        kRedirectURI = "com.example:/openid"  // Reverse DNS notation of base url with openid route
         kAppAuthExampleAuthStateKey = "com.okta.openid.authState"
         apiEndpoint = NSURL(string: "https://example.server.com")
     }
@@ -79,7 +79,7 @@ Interacts with the Authorization Server by using the discovered values from the 
 ```
 
 ###Get User Info
-If the user is authenticated, fresh tokens are generated for calling the `/userinfo` endpoint to retrieve user data. If received, the output is printed to the console and a UIAlert.
+If the user is authenticated, fresh tokens are generated for calling the [`/userinfo`](http://developer.okta.com/docs/api/resources/oidc#get-user-information) endpoint to retrieve user data. If received, the output is printed to the console and a UIAlert.
 
 ###Refresh Tokens
 The AppAuth method `withFreshTokensPerformAction()` is used to refresh the current **access token** if the user is authenticated and the `setNeedsTokenRefresh` flag is set to `true`.

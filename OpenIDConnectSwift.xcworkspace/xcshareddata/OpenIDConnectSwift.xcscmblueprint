@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "255315FED486BC5185452760608FDA00C4CFD4FF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8501205396CF38FAB5663D96B55F0600C66D5A6F" : 0,
+    "255315FED486BC5185452760608FDA00C4CFD4FF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6E36E603-4C56-490C-AE60-8660667E4A0B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8501205396CF38FAB5663D96B55F0600C66D5A6F" : "",
+    "255315FED486BC5185452760608FDA00C4CFD4FF" : "okta-openidconnect-appauth-sample-swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OpenIDConnectSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OpenIDConnectSwift.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jmelberg\/okta-openidconnect-appauth-sample-swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "255315FED486BC5185452760608FDA00C4CFD4FF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jmelberg\/kapsule.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8501205396CF38FAB5663D96B55F0600C66D5A6F"
+    }
+  ]
+}

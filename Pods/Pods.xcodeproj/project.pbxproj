@@ -1,669 +1,2170 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		04B2635529548A681455102366F051F7 /* OIDFieldMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = E7A370BE216CAFC2660E930CE1AD4CE0 /* OIDFieldMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0916A73683413F940FCA39CC832B8CEC /* OIDDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B9EAD8A7283061531910CEFA05F5839 /* OIDDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13482B58CAC82FF57613037E90E30C73 /* OIDServiceDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7D25D88A667EF81517FDA7BE67A1CA /* OIDServiceDiscovery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AB4530B82A23C2868C6452FFA275990 /* OIDTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4375A74856B89DF2B21A3B1DE015F8 /* OIDTokenResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2104E5D30D19DB1303C13547679E323A /* OIDFieldMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF183D955440B16C967F23F822B78DB /* OIDFieldMapping.m */; };
-		21A29D23C2E06078DA801BE9A5F22F65 /* OIDScopes.m in Sources */ = {isa = PBXBuildFile; fileRef = A427D5E64BCAF2711A1EAA267E343C0B /* OIDScopes.m */; };
-		24986FB1A378062B33FF37E2FC235F7D /* OIDAuthorizationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC3DBA375A9C988BA9CD5EEBCD2B9D6 /* OIDAuthorizationRequest.m */; };
-		28B31761A1A158EA8E065DB5B3626FDE /* OIDAuthorizationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F0CAFD2DC0292DA031A7C8E410F23D42 /* OIDAuthorizationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28EA2F4B3B6A080ACA7C991508685B9B /* OIDTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AD4F13FBB872D0B6E18A78C87BD8DDFF /* OIDTokenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D9DEA11417838A17BE547B2D1A60F3C /* Pods-OpenIDConnectSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5644C7809AEC7D74F4EBD8E5D0D58 /* Pods-OpenIDConnectSwift-dummy.m */; };
-		32F0204BEED4A25C4E1453C761DEC7AF /* OIDServiceConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E2422B110D4BEC03DE70AC544AD5D607 /* OIDServiceConfiguration.m */; };
-		32FA3CE9C55E4C7273DD91F19C258CD0 /* OIDAuthStateChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7412037A6EBE0256B56AE18BAA06DDD9 /* OIDAuthStateChangeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33CFF57B67CBAF259BA8CF18BD6B37CC /* AppAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C31D4A4DC8F5B189B5ED228FAF6A29 /* AppAuth-dummy.m */; };
-		387850DBD6FA8995D1AB176EF58AB74D /* OIDServiceConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D7903417AFF098C2D56E0CB1EDB071 /* OIDServiceConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43F15A444E1089EE02E2EA8BEF3BB54C /* OIDResponseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC324E7BB0E7C2C6DDD5F23873B95E /* OIDResponseTypes.m */; };
-		4515A8F575580D4B69C9951D76720F27 /* OIDScopeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 482E7F11341184546BA9C63D2E1673EF /* OIDScopeUtilities.m */; };
-		45987C238483220A57D466C98BCA9FC5 /* OIDGrantTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1D861ACB99F1C023B645F55B1EA05A /* OIDGrantTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D6B7BAB1557B5F504D39CAC6403F40F /* OIDAuthorizationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F644E8EC63675AFD28F83E9D8E1288AE /* OIDAuthorizationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5036AD8D1C2D517A1ACD3B02C74B6F6F /* OIDAuthorizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3A507D896F2280D325EBD350BF20ED /* OIDAuthorizationService.m */; };
-		5C91A0C7FDD2A01440D88FC70534EE00 /* OIDError.h in Headers */ = {isa = PBXBuildFile; fileRef = 06CC983EBC41E8B64677CF62A3785380 /* OIDError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DAC43FF7E66B02400E153EEF5A2E108 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5F65ACD1274B83F4DA0B8E8EFAF209 /* Foundation.framework */; };
-		5F43962AB5F7FB4D6B303DC902A3B221 /* Pods-OpenIDConnectSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F68528DD861803AF7A4EAFDE386B338 /* Pods-OpenIDConnectSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FE9A15D879F1502F8A677E7F56D3D9D /* OIDURLQueryComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 56275A2F557DDCBF57ED56D02EDEBBB0 /* OIDURLQueryComponent.m */; };
-		65F2BA04DC9DB19E3B7E17112892F249 /* OIDTokenUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C8E414E80390154461B78F36016ED /* OIDTokenUtilities.m */; };
-		6FF253526F0B7D5AD0742399C38115FF /* OIDErrorUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E54DEC27DE122EA0FF2F15EB8F7E4AA /* OIDErrorUtilities.m */; };
-		70EFA1E40C828C74430D0D00808E9AEA /* OIDAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAC389D7693E46FB5351BBB50C1554E /* OIDAuthState.m */; };
-		7640B6538D53EE6C00F28F60F868F1AE /* OIDResponseTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = AE48B0AFD5E103C075BBF1D54BF18876 /* OIDResponseTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78A1697892770BE0BD3F82BB4D92925E /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D91312EA8816E5BB825139FA94C8A8 /* SafariServices.framework */; };
-		91DBA233331574D357ABACA3467BAEF9 /* OIDAuthorizationService.h in Headers */ = {isa = PBXBuildFile; fileRef = 194840D685CC1D742493535A99E7B6DB /* OIDAuthorizationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9CE77AD3F199A04D9CB9ED86E8C35A20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5F65ACD1274B83F4DA0B8E8EFAF209 /* Foundation.framework */; };
-		A04A4F4A86BA9081BF73B60FE126097B /* OIDAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = F3420452F3B022F97D6706EDCEB07281 /* OIDAuthState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ACE1BD83AE8C6535E8FFBA2FD6D8F030 /* AppAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 3013762058C7A0C8E6D5B0906C40F388 /* AppAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B12871AE3ED752592FDE3C16EAF56887 /* OIDGrantTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3886199394492AAAC60F657BB49D39 /* OIDGrantTypes.m */; };
-		B516C09D7BAA3323EB3B2D0B907D3256 /* OIDScopes.h in Headers */ = {isa = PBXBuildFile; fileRef = A829D40FED27F7F66262265D0B4AFE52 /* OIDScopes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B51D5C6246626C37B63BBCED1A4A023A /* AppAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E322729244CDF2D2DCD5AEEB9C3EDB7 /* AppAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B74ABAEA3D91617B04602EE2D2AF288B /* OIDServiceDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF96D06324CEB30066BE978721BF6BC /* OIDServiceDiscovery.m */; };
-		B932A671048CB87CEEC9714CDE9DC8D0 /* OIDTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B2835D813B78F92F14E54E70EAAD177B /* OIDTokenRequest.m */; };
-		BA8DDEEBD7AC13E1ABC100BA52E4FB8F /* OIDAuthStateErrorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AF31EB925D7BEF0F5307C84F50D5AA9E /* OIDAuthStateErrorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE84FCE7E000AD02A7FF91ADAC99FC93 /* OIDTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 531C92DEE12B13BED5B294C49A2DE09B /* OIDTokenResponse.m */; };
-		C42C1E97576AF3AEEDAC820CFDCF609A /* OIDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D1531A6667584BD126BF944E7C7DA4 /* OIDError.m */; };
-		C4ABF3D77D013C1C86CA15858634954A /* OIDURLQueryComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CC97005BFFE41EAB3772700BBE0056B /* OIDURLQueryComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D115327F7A58B9162698ABF2EA70DF56 /* OIDScopeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B92A20C2860C0F19976FD524DAD558A6 /* OIDScopeUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D82403FFDA888AFA375A7AF9D7A0B9EC /* OIDAuthorizationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD037D64E9D4D064BB214F43C3FFCC5 /* OIDAuthorizationResponse.m */; };
-		D906057F71EA40D1460852C9FA3277EE /* OIDErrorUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DAFB0E29805E4CF26D4CC46E2D289BC0 /* OIDErrorUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBFEEBF80876B644CA76E488637A5689 /* OIDTokenUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 549291890DE6FB8B07BF4500ACB6EE54 /* OIDTokenUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		222119F96DB23FF94CB87173D6311B99 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC24BEEA6E1FC4A0B31651A2AAEAB708;
-			remoteInfo = AppAuth;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		01B266A31B374F6EE22EADFD09B2E7F5 /* AppAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AppAuth.modulemap; sourceTree = "<group>"; };
-		02C31D4A4DC8F5B189B5ED228FAF6A29 /* AppAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppAuth-dummy.m"; sourceTree = "<group>"; };
-		06CC983EBC41E8B64677CF62A3785380 /* OIDError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDError.h; path = Source/OIDError.h; sourceTree = "<group>"; };
-		0DF281D12F3C9D5D7FF1F2CE3F35DA2A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		194840D685CC1D742493535A99E7B6DB /* OIDAuthorizationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationService.h; path = Source/OIDAuthorizationService.h; sourceTree = "<group>"; };
-		2C0E37697DFEE470D73AF7CFA1245DE2 /* Pods-OpenIDConnectSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenIDConnectSwift.release.xcconfig"; sourceTree = "<group>"; };
-		2C1D861ACB99F1C023B645F55B1EA05A /* OIDGrantTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDGrantTypes.h; path = Source/OIDGrantTypes.h; sourceTree = "<group>"; };
-		2C7D25D88A667EF81517FDA7BE67A1CA /* OIDServiceDiscovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceDiscovery.h; path = Source/OIDServiceDiscovery.h; sourceTree = "<group>"; };
-		2DF96D06324CEB30066BE978721BF6BC /* OIDServiceDiscovery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceDiscovery.m; path = Source/OIDServiceDiscovery.m; sourceTree = "<group>"; };
-		3013762058C7A0C8E6D5B0906C40F388 /* AppAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuth.h; path = Source/AppAuth.h; sourceTree = "<group>"; };
-		33D7903417AFF098C2D56E0CB1EDB071 /* OIDServiceConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceConfiguration.h; path = Source/OIDServiceConfiguration.h; sourceTree = "<group>"; };
-		3C3886199394492AAAC60F657BB49D39 /* OIDGrantTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDGrantTypes.m; path = Source/OIDGrantTypes.m; sourceTree = "<group>"; };
-		41D1531A6667584BD126BF944E7C7DA4 /* OIDError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDError.m; path = Source/OIDError.m; sourceTree = "<group>"; };
-		42A5644C7809AEC7D74F4EBD8E5D0D58 /* Pods-OpenIDConnectSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenIDConnectSwift-dummy.m"; sourceTree = "<group>"; };
-		42DC53460FAC0FCCFBC731AE13423E24 /* Pods-OpenIDConnectSwift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenIDConnectSwift-resources.sh"; sourceTree = "<group>"; };
-		482E7F11341184546BA9C63D2E1673EF /* OIDScopeUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopeUtilities.m; path = Source/OIDScopeUtilities.m; sourceTree = "<group>"; };
-		491C8E414E80390154461B78F36016ED /* OIDTokenUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenUtilities.m; path = Source/OIDTokenUtilities.m; sourceTree = "<group>"; };
-		4AFC324E7BB0E7C2C6DDD5F23873B95E /* OIDResponseTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDResponseTypes.m; path = Source/OIDResponseTypes.m; sourceTree = "<group>"; };
-		4C832BD00A75B1D529FB6A2B3182D10C /* Pods-OpenIDConnectSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenIDConnectSwift-acknowledgements.plist"; sourceTree = "<group>"; };
-		4DFA990CE936E677DB7BA447BF97E748 /* AppAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-prefix.pch"; sourceTree = "<group>"; };
-		4FAC389D7693E46FB5351BBB50C1554E /* OIDAuthState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthState.m; path = Source/OIDAuthState.m; sourceTree = "<group>"; };
-		531C92DEE12B13BED5B294C49A2DE09B /* OIDTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenResponse.m; path = Source/OIDTokenResponse.m; sourceTree = "<group>"; };
-		549291890DE6FB8B07BF4500ACB6EE54 /* OIDTokenUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenUtilities.h; path = Source/OIDTokenUtilities.h; sourceTree = "<group>"; };
-		56275A2F557DDCBF57ED56D02EDEBBB0 /* OIDURLQueryComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLQueryComponent.m; path = Source/OIDURLQueryComponent.m; sourceTree = "<group>"; };
-		5D1D31A2C76FF0B3EA3B62E32279711B /* Pods_OpenIDConnectSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenIDConnectSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DA2A38E96EE7E467125A3A1520A6545 /* AppAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppAuth.xcconfig; sourceTree = "<group>"; };
-		5E54DEC27DE122EA0FF2F15EB8F7E4AA /* OIDErrorUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDErrorUtilities.m; path = Source/OIDErrorUtilities.m; sourceTree = "<group>"; };
-		6CC97005BFFE41EAB3772700BBE0056B /* OIDURLQueryComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLQueryComponent.h; path = Source/OIDURLQueryComponent.h; sourceTree = "<group>"; };
-		7412037A6EBE0256B56AE18BAA06DDD9 /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
-		84D91312EA8816E5BB825139FA94C8A8 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
-		8880777DDFE3FA73D7F1C33B8D950703 /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D5F65ACD1274B83F4DA0B8E8EFAF209 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8D79A2BCAFDC2403F11232F8C2BB023C /* Pods-OpenIDConnectSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OpenIDConnectSwift.modulemap"; sourceTree = "<group>"; };
-		8E322729244CDF2D2DCD5AEEB9C3EDB7 /* AppAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-umbrella.h"; sourceTree = "<group>"; };
-		8F68528DD861803AF7A4EAFDE386B338 /* Pods-OpenIDConnectSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenIDConnectSwift-umbrella.h"; sourceTree = "<group>"; };
-		8FD037D64E9D4D064BB214F43C3FFCC5 /* OIDAuthorizationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationResponse.m; path = Source/OIDAuthorizationResponse.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B9EAD8A7283061531910CEFA05F5839 /* OIDDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDDefines.h; path = Source/OIDDefines.h; sourceTree = "<group>"; };
-		9EF183D955440B16C967F23F822B78DB /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/OIDFieldMapping.m; sourceTree = "<group>"; };
-		A427D5E64BCAF2711A1EAA267E343C0B /* OIDScopes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopes.m; path = Source/OIDScopes.m; sourceTree = "<group>"; };
-		A829D40FED27F7F66262265D0B4AFE52 /* OIDScopes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopes.h; path = Source/OIDScopes.h; sourceTree = "<group>"; };
-		AD4F13FBB872D0B6E18A78C87BD8DDFF /* OIDTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenRequest.h; path = Source/OIDTokenRequest.h; sourceTree = "<group>"; };
-		AE48B0AFD5E103C075BBF1D54BF18876 /* OIDResponseTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDResponseTypes.h; path = Source/OIDResponseTypes.h; sourceTree = "<group>"; };
-		AF31EB925D7BEF0F5307C84F50D5AA9E /* OIDAuthStateErrorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateErrorDelegate.h; path = Source/OIDAuthStateErrorDelegate.h; sourceTree = "<group>"; };
-		B241289C4D8A28568FD37CD46F16D4B6 /* Pods-OpenIDConnectSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenIDConnectSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		B2835D813B78F92F14E54E70EAAD177B /* OIDTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenRequest.m; path = Source/OIDTokenRequest.m; sourceTree = "<group>"; };
-		B92A20C2860C0F19976FD524DAD558A6 /* OIDScopeUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopeUtilities.h; path = Source/OIDScopeUtilities.h; sourceTree = "<group>"; };
-		C1F89BE986AE4CCDED5D755E0A7FFB5B /* Pods-OpenIDConnectSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenIDConnectSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CA4375A74856B89DF2B21A3B1DE015F8 /* OIDTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenResponse.h; path = Source/OIDTokenResponse.h; sourceTree = "<group>"; };
-		CF3A507D896F2280D325EBD350BF20ED /* OIDAuthorizationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationService.m; path = Source/OIDAuthorizationService.m; sourceTree = "<group>"; };
-		DAFB0E29805E4CF26D4CC46E2D289BC0 /* OIDErrorUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDErrorUtilities.h; path = Source/OIDErrorUtilities.h; sourceTree = "<group>"; };
-		DB3477374F4BA9B8EDD7942A52E1F93F /* Pods-OpenIDConnectSwift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenIDConnectSwift-frameworks.sh"; sourceTree = "<group>"; };
-		E2422B110D4BEC03DE70AC544AD5D607 /* OIDServiceConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceConfiguration.m; path = Source/OIDServiceConfiguration.m; sourceTree = "<group>"; };
-		E7A370BE216CAFC2660E930CE1AD4CE0 /* OIDFieldMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDFieldMapping.h; path = Source/OIDFieldMapping.h; sourceTree = "<group>"; };
-		EFC3DBA375A9C988BA9CD5EEBCD2B9D6 /* OIDAuthorizationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationRequest.m; path = Source/OIDAuthorizationRequest.m; sourceTree = "<group>"; };
-		F0CAFD2DC0292DA031A7C8E410F23D42 /* OIDAuthorizationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationRequest.h; path = Source/OIDAuthorizationRequest.h; sourceTree = "<group>"; };
-		F3420452F3B022F97D6706EDCEB07281 /* OIDAuthState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthState.h; path = Source/OIDAuthState.h; sourceTree = "<group>"; };
-		F590752FEA39D365EB0BAE1F0C9D66CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F644E8EC63675AFD28F83E9D8E1288AE /* OIDAuthorizationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationResponse.h; path = Source/OIDAuthorizationResponse.h; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		62CEF435339901B6151B144CDF71CE97 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9CE77AD3F199A04D9CB9ED86E8C35A20 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B72D318EDC47E9AC20502EF14C969459 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5DAC43FF7E66B02400E153EEF5A2E108 /* Foundation.framework in Frameworks */,
-				78A1697892770BE0BD3F82BB4D92925E /* SafariServices.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		08D37F493EF56E1365CD12FD4716A633 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				01B266A31B374F6EE22EADFD09B2E7F5 /* AppAuth.modulemap */,
-				5DA2A38E96EE7E467125A3A1520A6545 /* AppAuth.xcconfig */,
-				02C31D4A4DC8F5B189B5ED228FAF6A29 /* AppAuth-dummy.m */,
-				4DFA990CE936E677DB7BA447BF97E748 /* AppAuth-prefix.pch */,
-				8E322729244CDF2D2DCD5AEEB9C3EDB7 /* AppAuth-umbrella.h */,
-				F590752FEA39D365EB0BAE1F0C9D66CF /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AppAuth";
-			sourceTree = "<group>";
-		};
-		1129304E11B8868F47A5CB4D1E869EB5 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F89BFF22FE9B6390FB08ABF341E3C20F /* Pods-OpenIDConnectSwift */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AD118D986BF3A9DAF418C35AE961EE1C /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				850F3ED9FDF15E67C154542E8A0AD119 /* Pods */,
-				F8A40AEC422B99D8EFB8E467202A726C /* Products */,
-				1129304E11B8868F47A5CB4D1E869EB5 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		850F3ED9FDF15E67C154542E8A0AD119 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B9477E5948CFBF8BB63EEA3BA97221F5 /* AppAuth */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		AD118D986BF3A9DAF418C35AE961EE1C /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				8D5F65ACD1274B83F4DA0B8E8EFAF209 /* Foundation.framework */,
-				84D91312EA8816E5BB825139FA94C8A8 /* SafariServices.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		B9477E5948CFBF8BB63EEA3BA97221F5 /* AppAuth */ = {
-			isa = PBXGroup;
-			children = (
-				3013762058C7A0C8E6D5B0906C40F388 /* AppAuth.h */,
-				F0CAFD2DC0292DA031A7C8E410F23D42 /* OIDAuthorizationRequest.h */,
-				EFC3DBA375A9C988BA9CD5EEBCD2B9D6 /* OIDAuthorizationRequest.m */,
-				F644E8EC63675AFD28F83E9D8E1288AE /* OIDAuthorizationResponse.h */,
-				8FD037D64E9D4D064BB214F43C3FFCC5 /* OIDAuthorizationResponse.m */,
-				194840D685CC1D742493535A99E7B6DB /* OIDAuthorizationService.h */,
-				CF3A507D896F2280D325EBD350BF20ED /* OIDAuthorizationService.m */,
-				F3420452F3B022F97D6706EDCEB07281 /* OIDAuthState.h */,
-				4FAC389D7693E46FB5351BBB50C1554E /* OIDAuthState.m */,
-				7412037A6EBE0256B56AE18BAA06DDD9 /* OIDAuthStateChangeDelegate.h */,
-				AF31EB925D7BEF0F5307C84F50D5AA9E /* OIDAuthStateErrorDelegate.h */,
-				9B9EAD8A7283061531910CEFA05F5839 /* OIDDefines.h */,
-				06CC983EBC41E8B64677CF62A3785380 /* OIDError.h */,
-				41D1531A6667584BD126BF944E7C7DA4 /* OIDError.m */,
-				DAFB0E29805E4CF26D4CC46E2D289BC0 /* OIDErrorUtilities.h */,
-				5E54DEC27DE122EA0FF2F15EB8F7E4AA /* OIDErrorUtilities.m */,
-				E7A370BE216CAFC2660E930CE1AD4CE0 /* OIDFieldMapping.h */,
-				9EF183D955440B16C967F23F822B78DB /* OIDFieldMapping.m */,
-				2C1D861ACB99F1C023B645F55B1EA05A /* OIDGrantTypes.h */,
-				3C3886199394492AAAC60F657BB49D39 /* OIDGrantTypes.m */,
-				AE48B0AFD5E103C075BBF1D54BF18876 /* OIDResponseTypes.h */,
-				4AFC324E7BB0E7C2C6DDD5F23873B95E /* OIDResponseTypes.m */,
-				A829D40FED27F7F66262265D0B4AFE52 /* OIDScopes.h */,
-				A427D5E64BCAF2711A1EAA267E343C0B /* OIDScopes.m */,
-				B92A20C2860C0F19976FD524DAD558A6 /* OIDScopeUtilities.h */,
-				482E7F11341184546BA9C63D2E1673EF /* OIDScopeUtilities.m */,
-				33D7903417AFF098C2D56E0CB1EDB071 /* OIDServiceConfiguration.h */,
-				E2422B110D4BEC03DE70AC544AD5D607 /* OIDServiceConfiguration.m */,
-				2C7D25D88A667EF81517FDA7BE67A1CA /* OIDServiceDiscovery.h */,
-				2DF96D06324CEB30066BE978721BF6BC /* OIDServiceDiscovery.m */,
-				AD4F13FBB872D0B6E18A78C87BD8DDFF /* OIDTokenRequest.h */,
-				B2835D813B78F92F14E54E70EAAD177B /* OIDTokenRequest.m */,
-				CA4375A74856B89DF2B21A3B1DE015F8 /* OIDTokenResponse.h */,
-				531C92DEE12B13BED5B294C49A2DE09B /* OIDTokenResponse.m */,
-				549291890DE6FB8B07BF4500ACB6EE54 /* OIDTokenUtilities.h */,
-				491C8E414E80390154461B78F36016ED /* OIDTokenUtilities.m */,
-				6CC97005BFFE41EAB3772700BBE0056B /* OIDURLQueryComponent.h */,
-				56275A2F557DDCBF57ED56D02EDEBBB0 /* OIDURLQueryComponent.m */,
-				08D37F493EF56E1365CD12FD4716A633 /* Support Files */,
-			);
-			path = AppAuth;
-			sourceTree = "<group>";
-		};
-		F89BFF22FE9B6390FB08ABF341E3C20F /* Pods-OpenIDConnectSwift */ = {
-			isa = PBXGroup;
-			children = (
-				0DF281D12F3C9D5D7FF1F2CE3F35DA2A /* Info.plist */,
-				8D79A2BCAFDC2403F11232F8C2BB023C /* Pods-OpenIDConnectSwift.modulemap */,
-				C1F89BE986AE4CCDED5D755E0A7FFB5B /* Pods-OpenIDConnectSwift-acknowledgements.markdown */,
-				4C832BD00A75B1D529FB6A2B3182D10C /* Pods-OpenIDConnectSwift-acknowledgements.plist */,
-				42A5644C7809AEC7D74F4EBD8E5D0D58 /* Pods-OpenIDConnectSwift-dummy.m */,
-				DB3477374F4BA9B8EDD7942A52E1F93F /* Pods-OpenIDConnectSwift-frameworks.sh */,
-				42DC53460FAC0FCCFBC731AE13423E24 /* Pods-OpenIDConnectSwift-resources.sh */,
-				8F68528DD861803AF7A4EAFDE386B338 /* Pods-OpenIDConnectSwift-umbrella.h */,
-				B241289C4D8A28568FD37CD46F16D4B6 /* Pods-OpenIDConnectSwift.debug.xcconfig */,
-				2C0E37697DFEE470D73AF7CFA1245DE2 /* Pods-OpenIDConnectSwift.release.xcconfig */,
-			);
-			name = "Pods-OpenIDConnectSwift";
-			path = "Target Support Files/Pods-OpenIDConnectSwift";
-			sourceTree = "<group>";
-		};
-		F8A40AEC422B99D8EFB8E467202A726C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8880777DDFE3FA73D7F1C33B8D950703 /* AppAuth.framework */,
-				5D1D31A2C76FF0B3EA3B62E32279711B /* Pods_OpenIDConnectSwift.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		10EF44A1A5FBFF4222B8CF371630F5EC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F43962AB5F7FB4D6B303DC902A3B221 /* Pods-OpenIDConnectSwift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		353F6B4B58CC7AAAB8FABD4F78A9862D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B51D5C6246626C37B63BBCED1A4A023A /* AppAuth-umbrella.h in Headers */,
-				ACE1BD83AE8C6535E8FFBA2FD6D8F030 /* AppAuth.h in Headers */,
-				28B31761A1A158EA8E065DB5B3626FDE /* OIDAuthorizationRequest.h in Headers */,
-				4D6B7BAB1557B5F504D39CAC6403F40F /* OIDAuthorizationResponse.h in Headers */,
-				91DBA233331574D357ABACA3467BAEF9 /* OIDAuthorizationService.h in Headers */,
-				A04A4F4A86BA9081BF73B60FE126097B /* OIDAuthState.h in Headers */,
-				32FA3CE9C55E4C7273DD91F19C258CD0 /* OIDAuthStateChangeDelegate.h in Headers */,
-				BA8DDEEBD7AC13E1ABC100BA52E4FB8F /* OIDAuthStateErrorDelegate.h in Headers */,
-				0916A73683413F940FCA39CC832B8CEC /* OIDDefines.h in Headers */,
-				5C91A0C7FDD2A01440D88FC70534EE00 /* OIDError.h in Headers */,
-				D906057F71EA40D1460852C9FA3277EE /* OIDErrorUtilities.h in Headers */,
-				04B2635529548A681455102366F051F7 /* OIDFieldMapping.h in Headers */,
-				45987C238483220A57D466C98BCA9FC5 /* OIDGrantTypes.h in Headers */,
-				7640B6538D53EE6C00F28F60F868F1AE /* OIDResponseTypes.h in Headers */,
-				B516C09D7BAA3323EB3B2D0B907D3256 /* OIDScopes.h in Headers */,
-				D115327F7A58B9162698ABF2EA70DF56 /* OIDScopeUtilities.h in Headers */,
-				387850DBD6FA8995D1AB176EF58AB74D /* OIDServiceConfiguration.h in Headers */,
-				13482B58CAC82FF57613037E90E30C73 /* OIDServiceDiscovery.h in Headers */,
-				28EA2F4B3B6A080ACA7C991508685B9B /* OIDTokenRequest.h in Headers */,
-				1AB4530B82A23C2868C6452FFA275990 /* OIDTokenResponse.h in Headers */,
-				FBFEEBF80876B644CA76E488637A5689 /* OIDTokenUtilities.h in Headers */,
-				C4ABF3D77D013C1C86CA15858634954A /* OIDURLQueryComponent.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		930702CF5A3FD54C0E8943D1C7109D49 /* Pods-OpenIDConnectSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DF535DFEC3AE3F7314498847210A2EFD /* Build configuration list for PBXNativeTarget "Pods-OpenIDConnectSwift" */;
-			buildPhases = (
-				E6E5B86D7CEA19B3EDA17C2607A1073E /* Sources */,
-				62CEF435339901B6151B144CDF71CE97 /* Frameworks */,
-				10EF44A1A5FBFF4222B8CF371630F5EC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				953B91A2B9E556CCB78470D19206A945 /* PBXTargetDependency */,
-			);
-			name = "Pods-OpenIDConnectSwift";
-			productName = "Pods-OpenIDConnectSwift";
-			productReference = 5D1D31A2C76FF0B3EA3B62E32279711B /* Pods_OpenIDConnectSwift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CC24BEEA6E1FC4A0B31651A2AAEAB708 /* AppAuth */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B34150778811BF2BC5649EE216DD8DF8 /* Build configuration list for PBXNativeTarget "AppAuth" */;
-			buildPhases = (
-				E81EDFA695CA1229EA536A1EA73CE778 /* Sources */,
-				B72D318EDC47E9AC20502EF14C969459 /* Frameworks */,
-				353F6B4B58CC7AAAB8FABD4F78A9862D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AppAuth;
-			productName = AppAuth;
-			productReference = 8880777DDFE3FA73D7F1C33B8D950703 /* AppAuth.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F8A40AEC422B99D8EFB8E467202A726C /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				CC24BEEA6E1FC4A0B31651A2AAEAB708 /* AppAuth */,
-				930702CF5A3FD54C0E8943D1C7109D49 /* Pods-OpenIDConnectSwift */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		E6E5B86D7CEA19B3EDA17C2607A1073E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D9DEA11417838A17BE547B2D1A60F3C /* Pods-OpenIDConnectSwift-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E81EDFA695CA1229EA536A1EA73CE778 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				33CFF57B67CBAF259BA8CF18BD6B37CC /* AppAuth-dummy.m in Sources */,
-				24986FB1A378062B33FF37E2FC235F7D /* OIDAuthorizationRequest.m in Sources */,
-				D82403FFDA888AFA375A7AF9D7A0B9EC /* OIDAuthorizationResponse.m in Sources */,
-				5036AD8D1C2D517A1ACD3B02C74B6F6F /* OIDAuthorizationService.m in Sources */,
-				70EFA1E40C828C74430D0D00808E9AEA /* OIDAuthState.m in Sources */,
-				C42C1E97576AF3AEEDAC820CFDCF609A /* OIDError.m in Sources */,
-				6FF253526F0B7D5AD0742399C38115FF /* OIDErrorUtilities.m in Sources */,
-				2104E5D30D19DB1303C13547679E323A /* OIDFieldMapping.m in Sources */,
-				B12871AE3ED752592FDE3C16EAF56887 /* OIDGrantTypes.m in Sources */,
-				43F15A444E1089EE02E2EA8BEF3BB54C /* OIDResponseTypes.m in Sources */,
-				21A29D23C2E06078DA801BE9A5F22F65 /* OIDScopes.m in Sources */,
-				4515A8F575580D4B69C9951D76720F27 /* OIDScopeUtilities.m in Sources */,
-				32F0204BEED4A25C4E1453C761DEC7AF /* OIDServiceConfiguration.m in Sources */,
-				B74ABAEA3D91617B04602EE2D2AF288B /* OIDServiceDiscovery.m in Sources */,
-				B932A671048CB87CEEC9714CDE9DC8D0 /* OIDTokenRequest.m in Sources */,
-				BE84FCE7E000AD02A7FF91ADAC99FC93 /* OIDTokenResponse.m in Sources */,
-				65F2BA04DC9DB19E3B7E17112892F249 /* OIDTokenUtilities.m in Sources */,
-				5FE9A15D879F1502F8A677E7F56D3D9D /* OIDURLQueryComponent.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		953B91A2B9E556CCB78470D19206A945 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppAuth;
-			target = CC24BEEA6E1FC4A0B31651A2AAEAB708 /* AppAuth */;
-			targetProxy = 222119F96DB23FF94CB87173D6311B99 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		0111A902A3BADA33E9582DF302582AD5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DA2A38E96EE7E467125A3A1520A6545 /* AppAuth.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AppAuth/AppAuth-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AppAuth/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AppAuth/AppAuth.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AppAuth;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		103FCD65526C870B47A9EEBF0A18BBEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DA2A38E96EE7E467125A3A1520A6545 /* AppAuth.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AppAuth/AppAuth-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AppAuth/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AppAuth/AppAuth.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AppAuth;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5DD749C0F0F4C69644DC43F12F5E8F45 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B241289C4D8A28568FD37CD46F16D4B6 /* Pods-OpenIDConnectSwift.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OpenIDConnectSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OpenIDConnectSwift/Pods-OpenIDConnectSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OpenIDConnectSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		EEC35E62618E27C0E4648E23A0BB9677 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C0E37697DFEE470D73AF7CFA1245DE2 /* Pods-OpenIDConnectSwift.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OpenIDConnectSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OpenIDConnectSwift/Pods-OpenIDConnectSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OpenIDConnectSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
-				3FA451D268613890FA8A5A03801E11D5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B34150778811BF2BC5649EE216DD8DF8 /* Build configuration list for PBXNativeTarget "AppAuth" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0111A902A3BADA33E9582DF302582AD5 /* Debug */,
-				103FCD65526C870B47A9EEBF0A18BBEF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DF535DFEC3AE3F7314498847210A2EFD /* Build configuration list for PBXNativeTarget "Pods-OpenIDConnectSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5DD749C0F0F4C69644DC43F12F5E8F45 /* Debug */,
-				EEC35E62618E27C0E4648E23A0BB9677 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>01B266A31B374F6EE22EADFD09B2E7F5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>AppAuth.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>02C31D4A4DC8F5B189B5ED228FAF6A29</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppAuth-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>04B2635529548A681455102366F051F7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E7A370BE216CAFC2660E930CE1AD4CE0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>06CC983EBC41E8B64677CF62A3785380</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDError.h</string>
+			<key>path</key>
+			<string>Source/OIDError.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>08D37F493EF56E1365CD12FD4716A633</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>01B266A31B374F6EE22EADFD09B2E7F5</string>
+				<string>5DA2A38E96EE7E467125A3A1520A6545</string>
+				<string>02C31D4A4DC8F5B189B5ED228FAF6A29</string>
+				<string>4DFA990CE936E677DB7BA447BF97E748</string>
+				<string>8E322729244CDF2D2DCD5AEEB9C3EDB7</string>
+				<string>F590752FEA39D365EB0BAE1F0C9D66CF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/AppAuth</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0916A73683413F940FCA39CC832B8CEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B9EAD8A7283061531910CEFA05F5839</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>0DF281D12F3C9D5D7FF1F2CE3F35DA2A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1129304E11B8868F47A5CB4D1E869EB5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F89BFF22FE9B6390FB08ABF341E3C20F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>12AD1CA3FF39A226CF0C1B996FCE6483</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SafariServices.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SafariServices.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>13482B58CAC82FF57613037E90E30C73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2C7D25D88A667EF81517FDA7BE67A1CA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>15A3726C573214671F63CF5D1B927279</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_OpenIDConnectSwift.framework</string>
+			<key>path</key>
+			<string>Pods_OpenIDConnectSwift.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>194840D685CC1D742493535A99E7B6DB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDAuthorizationService.h</string>
+			<key>path</key>
+			<string>Source/OIDAuthorizationService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1AB4530B82A23C2868C6452FFA275990</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CA4375A74856B89DF2B21A3B1DE015F8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2104E5D30D19DB1303C13547679E323A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EF183D955440B16C967F23F822B78DB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>21A29D23C2E06078DA801BE9A5F22F65</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A427D5E64BCAF2711A1EAA267E343C0B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>24986FB1A378062B33FF37E2FC235F7D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EFC3DBA375A9C988BA9CD5EEBCD2B9D6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>28B31761A1A158EA8E065DB5B3626FDE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F0CAFD2DC0292DA031A7C8E410F23D42</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>28EA2F4B3B6A080ACA7C991508685B9B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD4F13FBB872D0B6E18A78C87BD8DDFF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2B389FAB51F6EEA43F72CA7BDC8E8E28</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2C0E37697DFEE470D73AF7CFA1245DE2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-OpenIDConnectSwift.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2C1D861ACB99F1C023B645F55B1EA05A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDGrantTypes.h</string>
+			<key>path</key>
+			<string>Source/OIDGrantTypes.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2C7D25D88A667EF81517FDA7BE67A1CA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDServiceDiscovery.h</string>
+			<key>path</key>
+			<string>Source/OIDServiceDiscovery.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2B389FAB51F6EEA43F72CA7BDC8E8E28</string>
+				<string>5A0C6FE968931D888F00C9EC18DDF5BC</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2DF96D06324CEB30066BE978721BF6BC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDServiceDiscovery.m</string>
+			<key>path</key>
+			<string>Source/OIDServiceDiscovery.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3013762058C7A0C8E6D5B0906C40F388</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AppAuth.h</string>
+			<key>path</key>
+			<string>Source/AppAuth.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>32F0204BEED4A25C4E1453C761DEC7AF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2422B110D4BEC03DE70AC544AD5D607</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>32FA3CE9C55E4C7273DD91F19C258CD0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7412037A6EBE0256B56AE18BAA06DDD9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>33CFF57B67CBAF259BA8CF18BD6B37CC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>02C31D4A4DC8F5B189B5ED228FAF6A29</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>33D7903417AFF098C2D56E0CB1EDB071</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDServiceConfiguration.h</string>
+			<key>path</key>
+			<string>Source/OIDServiceConfiguration.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>353F6B4B58CC7AAAB8FABD4F78A9862D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B51D5C6246626C37B63BBCED1A4A023A</string>
+				<string>ACE1BD83AE8C6535E8FFBA2FD6D8F030</string>
+				<string>28B31761A1A158EA8E065DB5B3626FDE</string>
+				<string>4D6B7BAB1557B5F504D39CAC6403F40F</string>
+				<string>91DBA233331574D357ABACA3467BAEF9</string>
+				<string>A04A4F4A86BA9081BF73B60FE126097B</string>
+				<string>32FA3CE9C55E4C7273DD91F19C258CD0</string>
+				<string>BA8DDEEBD7AC13E1ABC100BA52E4FB8F</string>
+				<string>0916A73683413F940FCA39CC832B8CEC</string>
+				<string>5C91A0C7FDD2A01440D88FC70534EE00</string>
+				<string>D906057F71EA40D1460852C9FA3277EE</string>
+				<string>04B2635529548A681455102366F051F7</string>
+				<string>45987C238483220A57D466C98BCA9FC5</string>
+				<string>7640B6538D53EE6C00F28F60F868F1AE</string>
+				<string>B516C09D7BAA3323EB3B2D0B907D3256</string>
+				<string>D115327F7A58B9162698ABF2EA70DF56</string>
+				<string>387850DBD6FA8995D1AB176EF58AB74D</string>
+				<string>13482B58CAC82FF57613037E90E30C73</string>
+				<string>28EA2F4B3B6A080ACA7C991508685B9B</string>
+				<string>1AB4530B82A23C2868C6452FFA275990</string>
+				<string>FBFEEBF80876B644CA76E488637A5689</string>
+				<string>C4ABF3D77D013C1C86CA15858634954A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>387850DBD6FA8995D1AB176EF58AB74D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>33D7903417AFF098C2D56E0CB1EDB071</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>3C3886199394492AAAC60F657BB49D39</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDGrantTypes.m</string>
+			<key>path</key>
+			<string>Source/OIDGrantTypes.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>41D1531A6667584BD126BF944E7C7DA4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDError.m</string>
+			<key>path</key>
+			<string>Source/OIDError.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>42A5644C7809AEC7D74F4EBD8E5D0D58</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-OpenIDConnectSwift-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>42DC53460FAC0FCCFBC731AE13423E24</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-OpenIDConnectSwift-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>433CD3331B6C3787F473C941B61FC68F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F12B318BD6EBAF3C6E58F951F6FFE662</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>43F15A444E1089EE02E2EA8BEF3BB54C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4AFC324E7BB0E7C2C6DDD5F23873B95E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4515A8F575580D4B69C9951D76720F27</key>
+		<dict>
+			<key>fileRef</key>
+			<string>482E7F11341184546BA9C63D2E1673EF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>45987C238483220A57D466C98BCA9FC5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2C1D861ACB99F1C023B645F55B1EA05A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>47FE2210F7F1536D3531635B6E4AAB95</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EB808EB774FAECF1FADB649A6199EA54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>482E7F11341184546BA9C63D2E1673EF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDScopeUtilities.m</string>
+			<key>path</key>
+			<string>Source/OIDScopeUtilities.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>491C8E414E80390154461B78F36016ED</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDTokenUtilities.m</string>
+			<key>path</key>
+			<string>Source/OIDTokenUtilities.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4AFC324E7BB0E7C2C6DDD5F23873B95E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDResponseTypes.m</string>
+			<key>path</key>
+			<string>Source/OIDResponseTypes.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C832BD00A75B1D529FB6A2B3182D10C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-OpenIDConnectSwift-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D6B7BAB1557B5F504D39CAC6403F40F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F644E8EC63675AFD28F83E9D8E1288AE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4DFA990CE936E677DB7BA447BF97E748</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppAuth-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4FAC389D7693E46FB5351BBB50C1554E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDAuthState.m</string>
+			<key>path</key>
+			<string>Source/OIDAuthState.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5036AD8D1C2D517A1ACD3B02C74B6F6F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CF3A507D896F2280D325EBD350BF20ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>531C92DEE12B13BED5B294C49A2DE09B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDTokenResponse.m</string>
+			<key>path</key>
+			<string>Source/OIDTokenResponse.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>549291890DE6FB8B07BF4500ACB6EE54</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDTokenUtilities.h</string>
+			<key>path</key>
+			<string>Source/OIDTokenUtilities.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56275A2F557DDCBF57ED56D02EDEBBB0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDURLQueryComponent.m</string>
+			<key>path</key>
+			<string>Source/OIDURLQueryComponent.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CD12486D81F8703C2B302059972163</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2C0E37697DFEE470D73AF7CFA1245DE2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-OpenIDConnectSwift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-OpenIDConnectSwift/Pods-OpenIDConnectSwift.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_OpenIDConnectSwift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>5A0C6FE968931D888F00C9EC18DDF5BC</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>5C91A0C7FDD2A01440D88FC70534EE00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>06CC983EBC41E8B64677CF62A3785380</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5DA2A38E96EE7E467125A3A1520A6545</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>AppAuth.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5E54DEC27DE122EA0FF2F15EB8F7E4AA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDErrorUtilities.m</string>
+			<key>path</key>
+			<string>Source/OIDErrorUtilities.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5ED22B8AFCAEEB04034BA6C3734DE13D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>5DA2A38E96EE7E467125A3A1520A6545</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/AppAuth/AppAuth-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/AppAuth/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/AppAuth/AppAuth.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>AppAuth</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5FE9A15D879F1502F8A677E7F56D3D9D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56275A2F557DDCBF57ED56D02EDEBBB0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>65F2BA04DC9DB19E3B7E17112892F249</key>
+		<dict>
+			<key>fileRef</key>
+			<string>491C8E414E80390154461B78F36016ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>662F19FC368DC50F889FDAB90515140B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>12AD1CA3FF39A226CF0C1B996FCE6483</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6CC97005BFFE41EAB3772700BBE0056B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDURLQueryComponent.h</string>
+			<key>path</key>
+			<string>Source/OIDURLQueryComponent.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF253526F0B7D5AD0742399C38115FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5E54DEC27DE122EA0FF2F15EB8F7E4AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>70EFA1E40C828C74430D0D00808E9AEA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4FAC389D7693E46FB5351BBB50C1554E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7412037A6EBE0256B56AE18BAA06DDD9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDAuthStateChangeDelegate.h</string>
+			<key>path</key>
+			<string>Source/OIDAuthStateChangeDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7640B6538D53EE6C00F28F60F868F1AE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AE48B0AFD5E103C075BBF1D54BF18876</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>433CD3331B6C3787F473C941B61FC68F</string>
+				<string>850F3ED9FDF15E67C154542E8A0AD119</string>
+				<string>A4F41E9C1EFC46D2AAFE00C2465C6DF0</string>
+				<string>1129304E11B8868F47A5CB4D1E869EB5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>850F3ED9FDF15E67C154542E8A0AD119</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B9477E5948CFBF8BB63EEA3BA97221F5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8D79A2BCAFDC2403F11232F8C2BB023C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-OpenIDConnectSwift.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8E322729244CDF2D2DCD5AEEB9C3EDB7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppAuth-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8F68528DD861803AF7A4EAFDE386B338</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-OpenIDConnectSwift-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8FD037D64E9D4D064BB214F43C3FFCC5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDAuthorizationResponse.m</string>
+			<key>path</key>
+			<string>Source/OIDAuthorizationResponse.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>91DBA233331574D357ABACA3467BAEF9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>194840D685CC1D742493535A99E7B6DB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>9395C8AACCCD59C9F702F87FB1B2A564</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>5DA2A38E96EE7E467125A3A1520A6545</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/AppAuth/AppAuth-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/AppAuth/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/AppAuth/AppAuth.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>AppAuth</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9B9EAD8A7283061531910CEFA05F5839</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDDefines.h</string>
+			<key>path</key>
+			<string>Source/OIDDefines.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EF183D955440B16C967F23F822B78DB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDFieldMapping.m</string>
+			<key>path</key>
+			<string>Source/OIDFieldMapping.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A04A4F4A86BA9081BF73B60FE126097B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3420452F3B022F97D6706EDCEB07281</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A427D5E64BCAF2711A1EAA267E343C0B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDScopes.m</string>
+			<key>path</key>
+			<string>Source/OIDScopes.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A4F41E9C1EFC46D2AAFE00C2465C6DF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C2C4599BEE9D381BC7BEA03B8AB56E98</string>
+				<string>15A3726C573214671F63CF5D1B927279</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A829D40FED27F7F66262265D0B4AFE52</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDScopes.h</string>
+			<key>path</key>
+			<string>Source/OIDScopes.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ACE1BD83AE8C6535E8FFBA2FD6D8F030</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3013762058C7A0C8E6D5B0906C40F388</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>AD4F13FBB872D0B6E18A78C87BD8DDFF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDTokenRequest.h</string>
+			<key>path</key>
+			<string>Source/OIDTokenRequest.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AE48B0AFD5E103C075BBF1D54BF18876</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDResponseTypes.h</string>
+			<key>path</key>
+			<string>Source/OIDResponseTypes.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AF31EB925D7BEF0F5307C84F50D5AA9E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDAuthStateErrorDelegate.h</string>
+			<key>path</key>
+			<string>Source/OIDAuthStateErrorDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B12871AE3ED752592FDE3C16EAF56887</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3C3886199394492AAAC60F657BB49D39</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B241289C4D8A28568FD37CD46F16D4B6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-OpenIDConnectSwift.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2835D813B78F92F14E54E70EAAD177B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDTokenRequest.m</string>
+			<key>path</key>
+			<string>Source/OIDTokenRequest.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B34150778811BF2BC5649EE216DD8DF8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5ED22B8AFCAEEB04034BA6C3734DE13D</string>
+				<string>9395C8AACCCD59C9F702F87FB1B2A564</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B4AFDE37496599B45F81C64DDA78DB18</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D438ED5430E4D6DB4D8E9B54BF8E3CBA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>DCADB5C8E60141C1A8AB80DE049B4229</string>
+				<string>FBF5799963D0132BC0D65FE4C4A28E43</string>
+				<string>47FE2210F7F1536D3531635B6E4AAB95</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>BD98D3965106EE412C859EB46B09824C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-OpenIDConnectSwift</string>
+			<key>productName</key>
+			<string>Pods-OpenIDConnectSwift</string>
+			<key>productReference</key>
+			<string>15A3726C573214671F63CF5D1B927279</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>B516C09D7BAA3323EB3B2D0B907D3256</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A829D40FED27F7F66262265D0B4AFE52</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B51D5C6246626C37B63BBCED1A4A023A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8E322729244CDF2D2DCD5AEEB9C3EDB7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B72D318EDC47E9AC20502EF14C969459</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>BBF35D9969461240EB1C1289780C9006</string>
+				<string>662F19FC368DC50F889FDAB90515140B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B74ABAEA3D91617B04602EE2D2AF288B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2DF96D06324CEB30066BE978721BF6BC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B92A20C2860C0F19976FD524DAD558A6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDScopeUtilities.h</string>
+			<key>path</key>
+			<string>Source/OIDScopeUtilities.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B932A671048CB87CEEC9714CDE9DC8D0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B2835D813B78F92F14E54E70EAAD177B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B9477E5948CFBF8BB63EEA3BA97221F5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3013762058C7A0C8E6D5B0906C40F388</string>
+				<string>F0CAFD2DC0292DA031A7C8E410F23D42</string>
+				<string>EFC3DBA375A9C988BA9CD5EEBCD2B9D6</string>
+				<string>F644E8EC63675AFD28F83E9D8E1288AE</string>
+				<string>8FD037D64E9D4D064BB214F43C3FFCC5</string>
+				<string>194840D685CC1D742493535A99E7B6DB</string>
+				<string>CF3A507D896F2280D325EBD350BF20ED</string>
+				<string>F3420452F3B022F97D6706EDCEB07281</string>
+				<string>4FAC389D7693E46FB5351BBB50C1554E</string>
+				<string>7412037A6EBE0256B56AE18BAA06DDD9</string>
+				<string>AF31EB925D7BEF0F5307C84F50D5AA9E</string>
+				<string>9B9EAD8A7283061531910CEFA05F5839</string>
+				<string>06CC983EBC41E8B64677CF62A3785380</string>
+				<string>41D1531A6667584BD126BF944E7C7DA4</string>
+				<string>DAFB0E29805E4CF26D4CC46E2D289BC0</string>
+				<string>5E54DEC27DE122EA0FF2F15EB8F7E4AA</string>
+				<string>E7A370BE216CAFC2660E930CE1AD4CE0</string>
+				<string>9EF183D955440B16C967F23F822B78DB</string>
+				<string>2C1D861ACB99F1C023B645F55B1EA05A</string>
+				<string>3C3886199394492AAAC60F657BB49D39</string>
+				<string>AE48B0AFD5E103C075BBF1D54BF18876</string>
+				<string>4AFC324E7BB0E7C2C6DDD5F23873B95E</string>
+				<string>A829D40FED27F7F66262265D0B4AFE52</string>
+				<string>A427D5E64BCAF2711A1EAA267E343C0B</string>
+				<string>B92A20C2860C0F19976FD524DAD558A6</string>
+				<string>482E7F11341184546BA9C63D2E1673EF</string>
+				<string>33D7903417AFF098C2D56E0CB1EDB071</string>
+				<string>E2422B110D4BEC03DE70AC544AD5D607</string>
+				<string>2C7D25D88A667EF81517FDA7BE67A1CA</string>
+				<string>2DF96D06324CEB30066BE978721BF6BC</string>
+				<string>AD4F13FBB872D0B6E18A78C87BD8DDFF</string>
+				<string>B2835D813B78F92F14E54E70EAAD177B</string>
+				<string>CA4375A74856B89DF2B21A3B1DE015F8</string>
+				<string>531C92DEE12B13BED5B294C49A2DE09B</string>
+				<string>549291890DE6FB8B07BF4500ACB6EE54</string>
+				<string>491C8E414E80390154461B78F36016ED</string>
+				<string>6CC97005BFFE41EAB3772700BBE0056B</string>
+				<string>56275A2F557DDCBF57ED56D02EDEBBB0</string>
+				<string>08D37F493EF56E1365CD12FD4716A633</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>AppAuth</string>
+			<key>path</key>
+			<string>AppAuth</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BA8DDEEBD7AC13E1ABC100BA52E4FB8F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AF31EB925D7BEF0F5307C84F50D5AA9E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>BBF35D9969461240EB1C1289780C9006</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE77B99EEFB345126F539604453DB0B6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BD98D3965106EE412C859EB46B09824C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>AppAuth</string>
+			<key>target</key>
+			<string>CC24BEEA6E1FC4A0B31651A2AAEAB708</string>
+			<key>targetProxy</key>
+			<string>D08E4C62910B3FA78B4A60972306CFFF</string>
+		</dict>
+		<key>BE84FCE7E000AD02A7FF91ADAC99FC93</key>
+		<dict>
+			<key>fileRef</key>
+			<string>531C92DEE12B13BED5B294C49A2DE09B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C1F89BE986AE4CCDED5D755E0A7FFB5B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-OpenIDConnectSwift-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C2C4599BEE9D381BC7BEA03B8AB56E98</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>AppAuth.framework</string>
+			<key>path</key>
+			<string>AppAuth.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C42C1E97576AF3AEEDAC820CFDCF609A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>41D1531A6667584BD126BF944E7C7DA4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C4ABF3D77D013C1C86CA15858634954A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6CC97005BFFE41EAB3772700BBE0056B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>CA4375A74856B89DF2B21A3B1DE015F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDTokenResponse.h</string>
+			<key>path</key>
+			<string>Source/OIDTokenResponse.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC24BEEA6E1FC4A0B31651A2AAEAB708</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B34150778811BF2BC5649EE216DD8DF8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E81EDFA695CA1229EA536A1EA73CE778</string>
+				<string>B72D318EDC47E9AC20502EF14C969459</string>
+				<string>353F6B4B58CC7AAAB8FABD4F78A9862D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AppAuth</string>
+			<key>productName</key>
+			<string>AppAuth</string>
+			<key>productReference</key>
+			<string>C2C4599BEE9D381BC7BEA03B8AB56E98</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>CDB821A02AB05BB8E94706CA1FB4FEB6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE77B99EEFB345126F539604453DB0B6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE77B99EEFB345126F539604453DB0B6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>CF3A507D896F2280D325EBD350BF20ED</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDAuthorizationService.m</string>
+			<key>path</key>
+			<string>Source/OIDAuthorizationService.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D08E4C62910B3FA78B4A60972306CFFF</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>CC24BEEA6E1FC4A0B31651A2AAEAB708</string>
+			<key>remoteInfo</key>
+			<string>AppAuth</string>
+		</dict>
+		<key>D115327F7A58B9162698ABF2EA70DF56</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B92A20C2860C0F19976FD524DAD558A6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>A4F41E9C1EFC46D2AAFE00C2465C6DF0</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>CC24BEEA6E1FC4A0B31651A2AAEAB708</string>
+				<string>B4AFDE37496599B45F81C64DDA78DB18</string>
+			</array>
+		</dict>
+		<key>D438ED5430E4D6DB4D8E9B54BF8E3CBA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>EC50FC239003F311625C4DCF862234DB</string>
+				<string>57CD12486D81F8703C2B302059972163</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D82403FFDA888AFA375A7AF9D7A0B9EC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8FD037D64E9D4D064BB214F43C3FFCC5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D906057F71EA40D1460852C9FA3277EE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFB0E29805E4CF26D4CC46E2D289BC0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DAFB0E29805E4CF26D4CC46E2D289BC0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDErrorUtilities.h</string>
+			<key>path</key>
+			<string>Source/OIDErrorUtilities.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DB3477374F4BA9B8EDD7942A52E1F93F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-OpenIDConnectSwift-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DCADB5C8E60141C1A8AB80DE049B4229</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EB6186C4DB6A0CFB0268E4BE72CEB2D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E2422B110D4BEC03DE70AC544AD5D607</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDServiceConfiguration.m</string>
+			<key>path</key>
+			<string>Source/OIDServiceConfiguration.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E7A370BE216CAFC2660E930CE1AD4CE0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDFieldMapping.h</string>
+			<key>path</key>
+			<string>Source/OIDFieldMapping.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E81EDFA695CA1229EA536A1EA73CE778</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>33CFF57B67CBAF259BA8CF18BD6B37CC</string>
+				<string>24986FB1A378062B33FF37E2FC235F7D</string>
+				<string>D82403FFDA888AFA375A7AF9D7A0B9EC</string>
+				<string>5036AD8D1C2D517A1ACD3B02C74B6F6F</string>
+				<string>70EFA1E40C828C74430D0D00808E9AEA</string>
+				<string>C42C1E97576AF3AEEDAC820CFDCF609A</string>
+				<string>6FF253526F0B7D5AD0742399C38115FF</string>
+				<string>2104E5D30D19DB1303C13547679E323A</string>
+				<string>B12871AE3ED752592FDE3C16EAF56887</string>
+				<string>43F15A444E1089EE02E2EA8BEF3BB54C</string>
+				<string>21A29D23C2E06078DA801BE9A5F22F65</string>
+				<string>4515A8F575580D4B69C9951D76720F27</string>
+				<string>32F0204BEED4A25C4E1453C761DEC7AF</string>
+				<string>B74ABAEA3D91617B04602EE2D2AF288B</string>
+				<string>B932A671048CB87CEEC9714CDE9DC8D0</string>
+				<string>BE84FCE7E000AD02A7FF91ADAC99FC93</string>
+				<string>65F2BA04DC9DB19E3B7E17112892F249</string>
+				<string>5FE9A15D879F1502F8A677E7F56D3D9D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EB6186C4DB6A0CFB0268E4BE72CEB2D7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>42A5644C7809AEC7D74F4EBD8E5D0D58</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EB808EB774FAECF1FADB649A6199EA54</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8F68528DD861803AF7A4EAFDE386B338</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>EC50FC239003F311625C4DCF862234DB</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B241289C4D8A28568FD37CD46F16D4B6</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-OpenIDConnectSwift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-OpenIDConnectSwift/Pods-OpenIDConnectSwift.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_OpenIDConnectSwift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>EFC3DBA375A9C988BA9CD5EEBCD2B9D6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>OIDAuthorizationRequest.m</string>
+			<key>path</key>
+			<string>Source/OIDAuthorizationRequest.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F0CAFD2DC0292DA031A7C8E410F23D42</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDAuthorizationRequest.h</string>
+			<key>path</key>
+			<string>Source/OIDAuthorizationRequest.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F12B318BD6EBAF3C6E58F951F6FFE662</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE77B99EEFB345126F539604453DB0B6</string>
+				<string>12AD1CA3FF39A226CF0C1B996FCE6483</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3420452F3B022F97D6706EDCEB07281</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDAuthState.h</string>
+			<key>path</key>
+			<string>Source/OIDAuthState.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F590752FEA39D365EB0BAE1F0C9D66CF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F644E8EC63675AFD28F83E9D8E1288AE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OIDAuthorizationResponse.h</string>
+			<key>path</key>
+			<string>Source/OIDAuthorizationResponse.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F89BFF22FE9B6390FB08ABF341E3C20F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0DF281D12F3C9D5D7FF1F2CE3F35DA2A</string>
+				<string>8D79A2BCAFDC2403F11232F8C2BB023C</string>
+				<string>C1F89BE986AE4CCDED5D755E0A7FFB5B</string>
+				<string>4C832BD00A75B1D529FB6A2B3182D10C</string>
+				<string>42A5644C7809AEC7D74F4EBD8E5D0D58</string>
+				<string>DB3477374F4BA9B8EDD7942A52E1F93F</string>
+				<string>42DC53460FAC0FCCFBC731AE13423E24</string>
+				<string>8F68528DD861803AF7A4EAFDE386B338</string>
+				<string>B241289C4D8A28568FD37CD46F16D4B6</string>
+				<string>2C0E37697DFEE470D73AF7CFA1245DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-OpenIDConnectSwift</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-OpenIDConnectSwift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FBF5799963D0132BC0D65FE4C4A28E43</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CDB821A02AB05BB8E94706CA1FB4FEB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FBFEEBF80876B644CA76E488637A5689</key>
+		<dict>
+			<key>fileRef</key>
+			<string>549291890DE6FB8B07BF4500ACB6EE54</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

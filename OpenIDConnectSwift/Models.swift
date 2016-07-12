@@ -8,9 +8,9 @@ class OktaConfiguration {
     let apiEndpoint: NSURL!
     
     init(){
-        kIssuer = "https://jordandemo.oktapreview.com"
-        kClientID = "Jw1nyzbsNihSuOETY3R1"
-        kRedirectURI = "com.oktapreview.jordandemo:/openid"
+        kIssuer = "https://example.com"
+        kClientID = "CLIENT_ID"
+        kRedirectURI = "com.example:/openid"
         kAppAuthExampleAuthStateKey = "com.okta.openid.authState"
         apiEndpoint = NSURL(string: "https://example.server.com")
     }
